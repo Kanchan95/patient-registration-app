@@ -1,0 +1,175 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Form inputs with consistent height */
+.form-row input[type="text"],
+.form-row input[type="number"],
+.form-row select {
+  height: 36px;
+  padding: 0 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-row input[type="text"] {
+  flex: 0 1 400px; /* Name field - largest */
+}
+
+.form-row input[type="number"] {
+  flex: 0 1 100px; /* Age field - smallest */
+}
+
+.form-row select {
+  flex: 0 1 150px; /* Gender field - medium */
+}
+
+/* Specific styles for form submit button */
+.form-row button {
+  width: 120px;
+  height: 36px;
+  padding: 0 12px;
+  background-color: #9845b7;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-row button:hover {
+  background-color: #9133b4;
+}
+
+/* General button styles (for delete and other buttons) */
+button {
+  background-color: #9845b7;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #9133b4;
+}
+
+.delete-btn {
+  background-color: #d43f3f;
+}
+
+.delete-btn:hover {
+  background-color: #b12727;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.sql-query {
+  margin-top: 40px;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.sql-query textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  font-family: monospace;
+  font-size: 14px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+.sql-query .error {
+  color: red;
+  margin: 10px 0;
+}
+
+.sql-query .results table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.sql-query .results th, 
+.sql-query .results td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.sql-query .results th {
+  background-color: #eee;
+}
+
+/* Update the existing pagination styles or add these if they don't exist */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 12px; /* Increased gap between buttons */
+  margin-top: 30px; /* Increased margin from table */
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.page-btn {
+  padding: 8px 16px; /* Increased padding */
+  border: 1px solid #9845b7;
+  background-color: white;
+  color: #9845b7;
+  cursor: pointer;
+  border-radius: 4px;
+  min-width: 40px;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.page-btn:hover {
+  background-color: #9845b7;
+  color: white;
+}
+
+.page-btn.active {
+  background-color: #9845b7;
+  color: white;
+}
+
+/* Add more spacing to the table container */
+.table-container {
+  margin-bottom: 30px;
+}
+
+/* Ensure table has proper spacing */
+table {
+  margin-bottom: 20px;
+}
